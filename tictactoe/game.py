@@ -66,11 +66,21 @@ class tictactoe():
     
         if print_game:
             print('It\'s a tie!')
-if __name__ == '__main__':
+print('Welcome to Tic Tac Toe!')
+print("1)play with a friend\n2)play with computer")
+choice = input("Enter your choice: ")
+if choice == '1':
+        x_player = HumanPlayer('X')
+        o_player = HumanPlayer('O')
+        t = tictactoe()
+        t.play(x_player, o_player, print_game=True)
+elif choice == '2':
         x_player = HumanPlayer('X')
         o_player = RandomComputerPlayer('O')
         t = tictactoe()
         t.play(x_player, o_player, print_game=True)
+else:
+        print("Invalid choice. Please enter 1 or 2.")
     
 
     
