@@ -1,1 +1,0 @@
-print("Wquickly! You have 5 seconds to start the game!")
