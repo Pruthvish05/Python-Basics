@@ -1,9 +1,17 @@
 from tkinter import *
-first_var = Tk()
-first_var.title("First GUI")
-first_var.geometry("400x400")
-first_var.config(bg="lightblue")
-first_var.maxsize(500, 500)
-first_var.minsize(200, 200)
+from PIL import Image, ImageTk
 
+first_root= Tk()
+first_root.title("First GUI")
+first_root.geometry("400x400")
+first_root.config(bg="lightblue")
+first_root.maxsize(500, 500)
+first_root.minsize(200, 200)
+img = Image.open("8am_charlotee.jpg")
+img = img.resize((200, 200))
+img = ImageTk.PhotoImage(img)
+label1 = Label(first_root, text="Welcome to Python GUI", font="Arial 20 bold", fg="red", bg="lightblue")
+label2= Label(first_root, image=img)
+label1.pack()
+label2.pack()
 start = mainloop()
