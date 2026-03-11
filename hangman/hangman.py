@@ -1,4 +1,4 @@
-from words import words
+from hangman.words import words
 import random
 def get_word():
     word=random.choice(words)
