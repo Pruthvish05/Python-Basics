@@ -1,4 +1,4 @@
 import qrcode
-d = "hey there"
+d = "hi there"
 img = qrcode.make(d)
-img.save(r"C:\Users\Pruthvish\Desktop\qrcode.png")
+img.save(r"C:/Users/Pruthvish/OneDrive/qrcode.png")
