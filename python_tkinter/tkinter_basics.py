@@ -15,6 +15,5 @@ label2= Label(first_root, image=img)
 text_label=Label(text="This is a text label", font="Arial 25 bold", fg="blue", bg="lightblue", relief=RAISED, bd=5)
 text_label.pack(anchor=NW,fill=X,padx=20,pady=10)
 label1.pack()
-label2.pack()
-
+label2.pack(anchor=SE, padx=20, pady=20)
 first_root.mainloop()
