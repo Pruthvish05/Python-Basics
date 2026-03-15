@@ -1,0 +1,2 @@
+This is my first file handling program in python
+"lose you' is one of the best songs by Drake.
