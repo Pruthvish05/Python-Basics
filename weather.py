@@ -1,7 +1,7 @@
 import requests
 from pprint import pprint
 def get_weather(city):
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=ee0157f47aa120cede525459862788d9&units=metric"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api-key}&units=metric"
     response = requests.get(url)
     data = response.json()
     if response.status_code == 200:
